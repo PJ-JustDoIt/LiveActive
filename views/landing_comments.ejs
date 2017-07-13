@@ -1,0 +1,51 @@
+
+
+
+
+<!-- below code from github.com/nax3t/background-slider  -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trails</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/landing_comments.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/main_comments.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script> 
+        
+
+
+    </head>
+    <body>
+    
+    <div class="container">
+        <% if(error && error.length > 0){ %>
+            <div class="alert alert-danger" role="alert">
+                <%= error %>
+            </div>
+        <% } %>
+        <% if(success && success.length > 0){ %>
+            <div class="alert alert-success" role="alert">
+                <%= success %>
+            </div>
+        <% } %>
+    </div>
+    
+    <div id="landing-header">
+ 		<h1>Welcome to <span style="color:Black;text-shadow:-1px -1px 0 Orange, 1px -1px 0 Orange, -1px 1px 0 Orange, 1px 1px 0 Orange;">Live</span> <span class=titlecolor >Active!</span></h1>
+ 		<hr>
+ 		<p style="color:white"> Find your perfect escape and get outdoors </p>
+		<a href="/trails" class="btn btn-lg btn-warning">View our Trails</a>
+    </div>
+    
+    <ul class="slideshow">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    
+    
+
+<% include partials/footer_comments %>

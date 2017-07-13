@@ -1,0 +1,286 @@
+
+.navbar{
+    background-color : black;
+}
+.titlecolor{
+    color:Orange;
+    text-shadow: 2px 1px 4px black;
+}
+
+.navbtns{
+    color:Orange;
+    font-size:1.5rem;
+    /*margin:auto 10%;*/
+    width:20vw;
+    /*margin-right:20vw;*/
+}
+
+.navbar-header{
+    /*margin-left:10%*/
+    /*width:30vw;*/
+}
+
+.jumbotron{
+    background:linear-gradient(to top, rgba(200,200,200,0.4), gray);
+    height:65vh;
+}
+
+
+a{
+     text-decoration: none !important;            
+}
+
+
+.colsplit{
+    padding:0;
+}
+
+
+.thumbnail{
+    height:55vh;
+    padding:0px;
+    margin-left:7%;
+    margin-right:7%;
+    margin-bottom:25%;
+    margin-top:30%;
+    opacity:1;
+    box-shadow: 10px 8px 15px rgba(0,0,0,.5);
+    border:none;
+    position:relative;
+}
+
+.thumbnail img {        
+    width:100% ; 
+    height:40vh;
+    
+} 
+
+.thumbnail:hover{        
+    transform: scaleX(1.2);
+    opacity:0.8;
+    transition: all 0.5s ease-in-out;
+    transition-delay:0.3s;   
+    z-index:10;
+} 
+
+
+.thumbnail .caption{
+    font-size:1.2em;
+    color:black;
+    height:20%;
+    padding-top:5%;
+    width:50%;
+    position:absolute;
+    left:0;
+    bottom:2%;
+}
+
+.thumbnail i{
+        /*width:5%;*/
+        /*margin:auto 2%;*/
+        /*position:absolute;*/
+        /*right:2%;*/
+}
+
+.hikeicon{
+    color:brown;
+    position:absolute;
+    top:-10%;
+    left:2%;
+    transform: scaleY(1.7) scaleX(1.7);
+}
+
+.bikeicon{
+    color:Brown;
+    position:absolute;
+    top:-9%;
+    left:15%;
+    transform: scaleY(1.7) scaleX(1.7);
+}
+
+.custom_button {
+     padding: .75em 1em;
+     font-weight: 500;
+     text-align: center;
+     color: black;
+     vertical-align: middle;
+     border: 5px solid orange; 
+     border-radius:35px;
+     cursor: pointer;
+     width:30%;
+     font-size:1.2rem;
+     background-color: rgba(100,100,100, 0.5);
+     transition: background-color 1s;   
+     margin:auto 2%;
+     position:absolute;
+     right:3%;
+     bottom:6%;
+}
+
+.custom_button:hover , .custom_button:focus{
+     background-color : rgba(200,200,200, 0.5);
+     color:black;
+}
+
+.jumbotron .btn-warning , .btn-warning{
+     padding: .75em 1em;
+     font-weight: 800;
+     text-align: center;
+     color: black;
+     vertical-align: middle;
+     border: 5px solid Orange; 
+     border-radius:35px;
+     cursor: pointer;
+     width:150px;
+     font-size:1.5rem;
+     background-color: rgba(100,100,100, 0.5);
+     transition: background-color 1s;   
+}
+
+.btn-warning{
+     margin:auto 30%;
+}
+
+.regform .btn-warning{
+    position:relative;
+    margin-left:0%;
+    width:100%;
+}
+
+.commentform .btn-warning{
+    position:relative;
+    margin-left:0%;
+    width:100%;
+}
+
+
+.jumbotron .btn-warning{
+     margin:2% 2% auto 2%;
+     position:relative;
+     left:37%;
+}
+
+.btn-warning:hover ,.btn-warning:focus{
+     background-color : rgba(200,200,200, 0.5);
+     color:black;
+     border: 7px solid rgba(100,100,100,0.8); 
+     transition: all 0.3s ease-in-out;
+
+}
+
+.jumbotron h1{
+     position:relative;
+     left:30%;
+}
+
+.regform{
+     text-align:center;
+     width:30%;
+     margin:auto 33%;
+}
+
+
+.lead{
+    padding-top:10px; 
+    margin-bottom:0px;
+}
+
+.lead+hr{
+    width:90%;
+    height:2px;
+    color:black;
+    background-color:black;
+    border:none;
+    margin-top:0px;
+}
+
+.weather-group{
+    list-style:none;
+    text-align:center;
+	background-color: rgba(0,0,0, 0.4);
+	box-shadow: 10px 8px 15px rgba(0,0,0,.5);
+	height : 50vh;
+	width : 80%;
+	margin-top:15vh;
+	margin-bottom:15vh;
+}
+
+.weather-group li, .weather-group li i{
+    margin-top:8px;
+    margin-right:10px;
+    margin-bottom:10px;
+}
+
+
+.author {
+    position:absolute;
+    right:10vw;
+    margin-top:5vh;
+}
+
+.showimage{
+    width:90%;
+    box-shadow: 10px 8px 15px rgba(0,0,0,.5);
+    transition: 1s ease;
+    filter: grayscale(100%);
+    height:80vh;
+}
+
+.showimage:hover{
+      transform: scale(1.08);
+      filter: grayscale(0);
+}
+
+.rating {
+    color:orange;
+    font-size:3em;
+    margin-right:20vw;
+    letter-spacing: 3px;
+    
+}
+
+.trailname{
+    color:Black;
+    font-size:2em;
+    margin-top:10vh;  
+}
+
+.showpagecontainer hr{
+    width:90%;
+    margin-left:0;
+    background-color:grey;
+    height:5px;
+    border:none;
+}
+
+.buttondiv .btn-warning{
+    margin-top:2vh;
+    margin-left:0px;
+    margin-bottom:4vh;
+}
+
+.commentbtn{
+    width:30%;
+    min-width:200px;
+    margin:auto 30%;
+}
+
+.eachcomment{
+    margin-top:8vh;
+}
+
+.descrpt , .specials{
+    width:90%;
+}
+
+.btn-success,.btn-danger{
+    background-color:orange;
+    color:black;
+    border:none;
+    margin-right:10px;
+}
+
+.commentcontainer{
+    text-align:center;
+    padding-top: 20vh
+}

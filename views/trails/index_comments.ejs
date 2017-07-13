@@ -1,0 +1,47 @@
+<% include ../partials/header_comments %>
+
+       
+
+ 
+ <div class="container">                            
+    
+    <div class="jumbotron">    
+     <div class="container">       
+      <h1 style="text-shadow:-2px -2px 0 Orange, 2px -2px 0 Orange, -2px 2px 0 Orange, 2px 2px 0 Orange;">Live<span class=titlecolor>Active!</span></h1>
+      <p> A resource to research hike/bike trails. Create and share your own trail experiences. Add your words of wisdom on existing trails to help others make better decisions for their trail adventures.</p>
+      <a class="btn btn-large btn-warning" href="/trails/new">Add New Trail</a>  
+     </div> 
+    </header>
+    
+    
+    
+   <div class="row text-center" style="display:flex;flex-wrap:wrap;">   
+    <%trails.forEach(function(onetrail){   %>   
+     <div class="col-lg-6 col-md-6 col-xs-12 colsplit">    
+        <div class="thumbnail"> 
+          <div>
+              <img src = <%=onetrail.image %> >
+          </div>
+          
+          <div class="row" style="display:flex;flex-wrap:wrap;">             
+              <p class="caption"><%= onetrail.name %> </p> 
+              <a href="/trails/<%=onetrail._id%>" class = "custom_button"> More Info</a>
+              <% if(onetrail.hiketrail){ %>
+               <i class="material-icons hikeicon">directions_walk</i>
+              <% } %>
+              <% if(onetrail.biketrail){ %>
+               <i class="material-icons bikeicon">directions_bike</i>
+              <% } %>
+          </div>       
+          
+        </div>
+     </div>
+    <% });  %>
+
+   </div>
+    
+
+
+</div>
+
+<% include ../partials/footer_comments %>
